@@ -13,8 +13,6 @@ buildscript {
 
 }
 
-println System.env.HOME
-
 apply plugin: 'groovy'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
