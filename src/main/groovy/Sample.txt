@@ -1,0 +1,18 @@
+@Grab(group='org.springframework.boot:spring-boot-starter-web')
+import org.springframework.boot.SpringApplication
+import org.springframework.web.bind.annotation.*
+import org.springframework.boot.autoconfigure.*
+
+@EnableAutoConfiguration(exclude = GroovyTemplateAutoConfiguration)
+@RestController
+class HelloWorld {
+
+ @RequestMapping("/")
+ String home(){
+ 		"***************** Hello World *******************"
+ }
+
+ static void main(String[] args){
+ 	SpringApplication.run HelloWorld, args
+ }
+}
